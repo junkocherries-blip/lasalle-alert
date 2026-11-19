@@ -2,7 +2,7 @@ import os, re, smtplib, subprocess, time, urllib.request
 from email.message import EmailMessage
 
 URL = "https://mirai-compass.net/usr/lasallej/event/evtIndex.jsf"
-IGNORE = []  # テスト用。本番は ["12/16"] に変更
+IGNORE = ["12/16"]  # テスト用。本番は ["12/16"] に変更
 
 def find_open():
     try:
